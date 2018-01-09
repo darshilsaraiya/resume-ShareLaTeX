@@ -1,0 +1,227 @@
+%
+% LaTeX source of my resume
+% =========================
+%
+% Heavily commented to to fit even LaTeX beginners (hopefully).
+%
+% See the `README.md` file for more info.
+%
+% This file is licensed under the CC-NC-ND Creative Commons license.
+%
+
+
+% Start a document with the here given default font size and paper size.
+\documentclass[10pt,a4paper]{article}
+
+% Set the page margins.
+\usepackage[a4paper,margin=0.21in]{geometry}
+
+% Setup the language.
+\usepackage[english]{babel}
+\hyphenation{Some-long-word}
+
+% Makes resume-specific commands available.
+\usepackage{resume}
+
+%\documentclass{article}
+\usepackage{booktabs}% http://ctan.org/pkg/booktabs
+
+
+\newcommand{\tabitem}{~~\llap{\textbullet}~~}
+
+
+\begin{document}  % begin the content of the document
+\sloppy  % this to relax whitespacing in favour of straight margins
+
+
+% title on top of the document
+\maintitle{Darshil Saraiya}{}%{Last update on \today }
+
+\nobreakvspace{0.4em}  % add some page break averse vertical spacing
+
+% \noindent prevents paragraph's first lines from indenting
+% \mbox is used to obfuscate the email address
+% \sbull is a spaced bullet
+% \href well..
+% \\ breaks the line into a new paragraph
+\noindent\href{mailto:sdarshil22.at.gmail.dot.com}{sdarshil22\mbox{}@\mbox{}gmail.com}\sbull
+\textsmaller{+}1 (408)821-9681\sbull
+{\newnums \href{https://github.com/darshilsaraiya}{darshilsaraiya (Github)}\sbull
+{\mewmums \href{https://www.linkedin.com/in/darshilsaraiya/}{www.linkedin.com/in/darshilsaraiya}\sbull
+{\mewmums {California}
+\\
+{%San Jose\sbull
+%CA%\sbull
+%95112\sbull
+%United States
+}
+
+
+\spacedhrule{0.0em}{-0.4em}
+\roottitle{Experience}
+
+
+
+\headedsection  % sets the header for the section and includes any subsections
+  {Sony Interactive Entertainment LLC}
+  {\textsc{California, United States}} {%
+  \headedsubsection
+    {Software Intern (Project: Kubernetes Development)}
+    {June \apo17 -- August \apo17}
+    {\bodytext
+    {
+    \begin{itemize}
+        \item Worked in DevOps Team to build capacity management for kubernetes cluster system using Prometheus. 
+        \item Developed REST APIs in Node.js for reporting system and Containerized Node.js application.
+        \item Technologies: Kubernetes, Prometheus, Docker, NodeJS-Express, Docker Trusted Registry.
+    \end{itemize}}}
+}
+
+\headedsection  % sets the header for the section and includes any subsections
+  {Kloud.io}
+  {\textsc{California, United States}} {%
+  \headedsubsection
+    {Software Engineer Intern (Project: Integration Platform as a Service)}
+    {March \apo17 -- April \apo17}
+    {\bodytext
+    {
+    \begin{itemize}
+        \item Developed REST APIs for invoicing using Stripe billing and invoicing system for the product.
+        \item Implemented Cron jobs using Node.js Cron library.
+        \item Technologies: NodeJS-Express, AWS S3, PostgreSQL, MySQL, MSSQL, Oracle DB, AWS RDS, Cron library, Stripe APIs
+    \end{itemize}}}
+}
+
+\headedsection  % sets the header for the section and includes any subsections
+  {eSecure Software}
+  {\textsc{Ahmedabad, India}} {%
+  \headedsubsection
+    {Graduate Trainee (Project: Web Application Development)}
+    {January \apo15 -- December \apo15}
+    {\bodytext
+    {
+    \begin{itemize}
+        \item Created Web services for various features in NodeJS-Express framework.
+        \item Designed and Implemented front-end of the Web Application
+        \item Technologies: NodeJS-Express, AngularJS, MongoDB
+    \end{itemize}}}
+}
+
+\spacedhrule{0.0em}{-0.4em}
+
+
+
+%\spacedhrule{0.0em}{-0.4em}
+
+%spacedhrule{0.0em}{-0.4em}
+
+
+
+\roottitle{Academic Projects}
+
+\headedsection  % sets the header for the section and includes any subsections
+  {\href{https://github.com/darshilsaraiya/Amazon}{Amazon Fresh Prototype}
+  \textbf{
+  \small{(NodeJS - Express | AngularJS | MongoDB | MySQL | RabbitMQ | Redis | Mocha | Jmeter | Bootstrap | AWS)}}}
+  {} {%
+  
+    {\bodytext
+    {
+    \begin{itemize}
+        \item Implemented a 3-tier web application which includes user, farmer and admin functionalities.
+        \item Provided functionalities like sign-up, sign-in with Password Encryption, give order, add-update-delete products-farmers-users, products as well as farmer search with Connection Pooling, load balancer and lazy loading.
+    \end{itemize}}}
+}
+
+\headedsection  % sets the header for the section and includes any subsections
+  {\href{https://github.com/darshilsaraiya/dockmate}{DockMate - Self-Adaptive Elastic Docker Cloud for Web-based applications}
+  \textbf{
+  \small{(Docker | Docker-Compose | HA Proxy Load Balancer | Java | Socket-IO | Google Compute Engine)}}}
+  {} {%
+  
+    {\bodytext
+    {
+    \begin{itemize}
+        \item Designed an elastic cloud for web applications using multiple Docker containers. Implemented dynamic provisioning/release of docker containers as per actual load.
+        \item Developed a monitoring system which monitors and predicts traffic for next interval based on HTTP request rate and resource utilization. The system dynamically scales in/out required docker containers with web application.
+    \end{itemize}}}
+}
+
+
+\headedsection  % sets the header for the section and includes any subsections
+  {\href{https://github.com/darshilsaraiya/LibraryManagementSystem}{Library Management System}
+  \textbf{
+  \small{(Spring MVC | Java | JPA | AWS RDS | AWS EC2 | Google Books API)}}}
+  {} {%
+  
+    {\bodytext
+    {
+    \begin{itemize}
+        \item Built a 3-tier web application which manages library system, including cataloguing, search, circulation, waiting list.
+        \item Developed an app for two users - Librarian and Patron with the integration of Google Books API.
+        
+    \end{itemize}}}
+}
+
+\headedsection  % sets the header for the section and includes any subsections
+  {\href{https://github.com/darshilsaraiya/SparkScalaAllPairsSimilarity}{Scaling Similarity Search for Big Data}
+  \textbf{
+  \small{(Apach Spark | Amazon S3 | Amazon EMR | Amazon EFS | Haddop YARN )}}}
+  {} {%
+  
+    {\bodytext
+    {
+    \begin{itemize}
+        \item Implemented the Spark driver program in order to enable an algorithm to run on multi-node cluster. This cluster is deployed in Amazon EMR.
+        \item Created Amazon S3 buckets and Amazon EFS to store the output of similarity search and metadata storage.
+        \item Gained 3.6 to 12.4 speedup by using spark driver. The speedup is measured in time required to calculate the similarity.
+        
+    \end{itemize}}}
+}
+
+
+\spacedhrule{0.0em}{-0.4em}
+
+\roottitle{Skills}
+{\bodytext{
+  \begin{tabular}{ll}
+    %\midrule
+    \tabitem \textbf{Programming Languages} & Java, C++, Android, Scala, Python \\[.1\normalbaselineskip]
+    \tabitem \textbf{Web Technologies} & Javascript, NodeJS-Express, JAX-WS, AJAX, Spring, Rest Web-Services \\[.1\normalbaselineskip]
+    \tabitem \textbf{Front-end Technologies} & Html 5, CSS, AngularJs, Bootstrap, XML \\[.1\normalbaselineskip]
+    \tabitem \textbf{Databases/Middleware} & MySQL, MS SQL, MongoDB, AWS RDS, Oracle, RabbitMQ, Redis \\[.1\normalbaselineskip]
+    \tabitem \textbf{Testing Tools and Frameworks} \hspace{.3cm}  &  JMeter, JUnit, Mocha, Selenium \\[.1\normalbaselineskip]
+    \tabitem \textbf{Operating Systems} & Unix, Linux, Mac, Windows \\[.1\normalbaselineskip]
+    \tabitem \textbf{Cloud Technologies} & Kubernetes, Docker, AWS, Google Cloud Platform, IBM Bluemix \\[.1\normalbaselineskip]
+    \tabitem \textbf{Cluster Computing} & Apache Spark \\[.1\normalbaselineskip]
+    \tabitem \textbf{Monitoring Tools} & Prometheus \\[.1\normalbaselineskip]
+    \tabitem \textbf{SCM and Versioning Tools} & Git, Gradle, Maven, Intellij, Eclipse \\[.1\normalbaselineskip]
+  \end{tabular}
+}}
+
+
+\spacedhrule{0.0em}{-0.4em}
+
+\roottitle{Education}
+
+\headedsection
+  {\href{http://www.sjsu.edu/}{San Jose State University} }
+  {\textsc{California, United States}} {%
+  \headedsubsection
+    {Master of Science in Software Engineering}
+    {Graduated - December \apo17}
+    {}
+}
+
+
+\headedsection
+  {\href{http://ddu.ac.in}{Dharmsinh Desai University} }
+  {\textsc{Gujarat, India}} {%
+  \headedsubsection
+    {Bachelor of Technology in Computer Engineering}
+    {Graduated - May \apo14}
+    {}
+}
+
+\end{document}
+\documentclass[oneside]{book}
